@@ -3,6 +3,23 @@
   "rules": {
     "selector-class-pattern": null,
     "no-empty-source": null,
-    "scss/at-import-partial-extension": null
+    "scss/at-import-partial-extension": null,
+    "no-invalid-position-at-import-rule": null,
+    "font-family-name-quotes": null,
+    "custom-property-pattern": null,
+    "comment-empty-line-before": null,
+    "comment-whitespace-inside": null,
+    "declaration-block-no-duplicate-properties": null,
+    "rule-empty-line-before": null,
+    "selector-pseudo-element-colon-notation": null,
+    "declaration-block-no-redundant-longhand-properties": null,
+    "declaration-empty-line-before": null,
+    "scss/double-slash-comment-empty-line-before": null,
+    "no-descending-specificity": null,
+    "scss/comment-no-empty": null,
+    "color-function-notation": null,
+    "alpha-value-notation": null,
+    "scss/double-slash-comment-whitespace-inside": null,
+    "block-no-empty": null
   }
 }

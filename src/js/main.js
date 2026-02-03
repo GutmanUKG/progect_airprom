@@ -1,22 +1,28 @@
-// Bootstrap JS - подключается через CDN в HTML
-// Или можно скопировать из node_modules
+// Импорт стилей
+import '../sass/main.scss';
 
-document.addEventListener('DOMContentLoaded', () => {
+// Импорт библиотек
+import 'bootstrap';
+import $ from 'jquery';
+import 'owl.carousel';
+
+// Owl Carousel стили
+import 'owl.carousel/dist/assets/owl.carousel.css';
+import 'owl.carousel/dist/assets/owl.theme.default.css';
+
+// Инициализация после загрузки DOM
+$(document).ready(function() {
+  // Owl Carousel
   $('.banner_list').owlCarousel({
-    loop:false,
-    margin:10,
-    nav:false,
+    loop: true,
+    margin: 10,
+    nav: false,
     dots: false,
-    responsive:{
-        0:{
-            items:1
-        },
-        600:{
-            items:1
-        },
-        1000:{
-            items:1
-        }
+    autoplay: false,
+    responsive: {
+      0: { items: 1 },
+      600: { items: 1 },
+      1000: { items: 1 }
     }
-  })
+  });
 });

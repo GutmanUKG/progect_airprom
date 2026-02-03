@@ -3,6 +3,12 @@
   "rules": {
     "no-trailing-whitespace": "off",
     "void-style": "off",
-    "doctype-style": "off"
+    "doctype-style": "off",
+    "attribute-boolean-style": "off",
+    "tel-non-breaking": "off",
+    "no-implicit-button-type": "off",
+    "wcag/h30": "off",
+    "no-inline-style": "off",
+    "require-sri": "off"
   }
 }

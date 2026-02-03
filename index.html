@@ -4,8 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Project Air</title>
-    <link rel="stylesheet" href="css/vendor.min.css">
-    <link rel="stylesheet" href="css/main.min.css">
 </head>
 <body>
     <header>
@@ -45,7 +43,7 @@
                 </div>
                 <div class="body_logo">
                     <a href="/">
-                        <img src="./src/img/logo_dark.png" alt="logo">
+                        <img src="img/logo_dark.png" alt="logo">
                     </a>
                 </div>
                 <div class="body_bar">
@@ -71,24 +69,107 @@
             </div>
         </div>
     </header>
-    
+    <!-- Слайдер баннеров -->
     <section class="banner">
         <div class="container_fluid">
         <div class="banner_list owl-carousel owl-theme">
-            <div class="banner_item" style="background-image: url(./src/img/banner-1.png) ;">
-
+            <div class="banner_item align-items-center d-flex" style="background-image: url(img/banner-1.png) ;">
+              <div class="container">
+                  <div class="row ">
+                    <div class="col-lg-4 col-sm-12">
+                        <div class="item_title">
+                            Компрессоры и комплектующие 
+                        </div>
+                        <div class="text">
+                            <ul>
+                                <li>8000+ моделей компресооров</li>
+                                <li>Официально представляем более 15 брендов</li>
+                                <li>Доставка по России и странам СНГ</li>
+                                <li>Пусконаладка и сервис</li>
+                            </ul>
+                        </div>
+                        <div class="btns">
+                            <a href="" class="btn-default">В каталог</a>  
+                            <a href="" class="btn-default btn-default--transparent">Консультация</a>     
+                        </div>
+                    </div>
+                </div>
+              </div>
             </div>
-            <div class="banner_item" style="background-image: url(./src/img/banner-1.png) ;">
-
+            <div class="banner_item align-items-center d-flex banner_item--dark" style="background-image: url(img/banner-2.png) ;">
+                <div class="container">
+                  <div class="row ">
+                    <div class="col-lg-4 col-sm-12">
+                        <div class="item_title">
+                            Пескоструйные аппараты
+                        </div>
+                        <div class="text">
+                            Профессиональные и промышленные системы
+                            мощностью от 600 Вт до 7 кВт,
+                            оснащенные как электромоторами так и ДВС
+                        </div>
+                        <div class="btns">
+                            <a href="" class="btn-default">В каталог</a>  
+                            <a href="" class="btn-default btn-default--transparent">Консультация</a>     
+                        </div>
+                    </div>
+                </div>
+              </div>
             </div>
         </div>
         </div>
       
     </section>
+    <!-- Блок преимущества -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero_list">
+                <div class="item">
+                    <div class="icon">
+                        <svg width="36" height="36">
+                            <use href="img/sprite.svg#box"></use>
+                        </svg>
+                    </div>
+                    <div class="title">Удобное оформление</div>
+                    <div class="text">
+                        Удобный интерфейс для подбора и заказа необходимого вам оборудования
+                    </div>
+                </div>
+                 <div class="item">
+                    <div class="icon">
+                        <svg width="36" height="36">
+                            <use href="img/sprite.svg#deliv"></use>
+                        </svg>
+                    </div>
+                    <div class="title">Доставка</div>
+                    <div class="text">
+                        Доставка по России, а также в Казахстан, Белоруссию, Узбекистан
+                    </div>
+                </div>
+                  <div class="item">
+                    <div class="icon">
+                        <svg width="36" height="36">
+                            <use href="img/sprite.svg#option"></use>
+                        </svg>
+                    </div>
+                    <div class="title">Пусконаладка и сервис</div>
+                    <div class="text">
+                        Пусконаладочные работы и гарантийный сервис от официального представителя
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Блок разделов каталога -->
+    <section class="catalog_category">
+        <div class="container">
+            <div class="category_list">
+             
+            </div>
+        </div>
+    </section>
     <!-- Пример SVG спрайта: -->
     <!-- <svg width="24" height="24"><use href="img/sprite.svg#icon-name"></use></svg> -->
 
-    <script src="js/vendor.min.js"></script>
-    <script src="js/main.min.js"></script>
 </body>
 </html>
