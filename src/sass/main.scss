@@ -1,0 +1,170 @@
+// Шрифты
+@font-face {
+  font-family: 'Inter';
+  src: url('../fonts/Inter_18pt-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('../fonts/Inter_18pt-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('../fonts/Inter_18pt-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('../fonts/Inter_24pt-ExtraBold.ttf') format('truetype');
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+// Переопределение переменных Bootstrap (до импорта)
+// $primary: #007bff;
+// $secondary: #6c757d;
+$font-family-base: 'Inter', sans-serif;
+
+// Bootstrap - весь фреймворк
+@import '../../node_modules/bootstrap/scss/bootstrap';
+
+// Или выборочный импорт:
+// @import '../../node_modules/bootstrap/scss/functions';
+// @import '../../node_modules/bootstrap/scss/variables';
+// @import '../../node_modules/bootstrap/scss/mixins';
+// @import '../../node_modules/bootstrap/scss/grid';
+// @import '../../node_modules/bootstrap/scss/utilities';
+// @import '../../node_modules/bootstrap/scss/buttons';
+
+// Подключение своих файлов
+// @import 'variables';
+// @import 'base';
+// @import 'components/header';
+
+// Свои стили ниже
+:root {
+  --font-family: "Inter", sans-serif;
+}
+/*Шапка*/
+header{
+  .top_header{
+    padding: 15px 40px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #67677e;
+    a,
+    button{
+      text-decoration: none;
+      font-family: var(--font-family);
+      font-weight: 400;
+      font-size: 13px;
+      line-height: 154%;
+      color: #67677e;
+      border: none;
+      outline: none;
+      padding: 0;
+      margin: 0;
+      background: none;
+    }
+  }
+  .top_menu{
+    ul{
+      padding: 0;
+      margin: 0;
+      list-style: none;
+      display: flex;
+      align-items: center;
+      gap: 30px;
+    }
+  }
+
+  .body_header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 40px;
+    .body_menu{
+      display: flex;
+      align-items: center;
+      gap: 30px;
+      .burder_btn{
+        width: 44px;
+        height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+      }
+      ul{
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        display: flex;
+        align-items: center;
+        gap: 30px;
+        li{
+          a{
+            font-family: var(--font-family);
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 150%;
+            color: #0d0d0f;
+            text-decoration: none;
+          }
+        }
+      }
+    }
+    .body_logo{
+      a{
+        display: block;
+        text-decoration: none;
+        img{
+          width: 95px;
+          height: 24px;
+        }
+      }
+    }
+    .body_bar{
+
+      .icons_bar{
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        a{
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 44px;
+          height: 44px;
+         
+        }
+      }
+    }
+  }
+}
+/*Шапка*/
+
+/*Слайдер баннеров*/
+section.banner{
+
+  .banner_list{
+    overflow-x: hidden;
+    .banner_item{
+      height: 600px;
+      background-size: cover;
+    }
+  }
+}
+/*Слайдер баннеров*/
